@@ -2,30 +2,42 @@
 
 ## Current Position
 
-Milestone: v0.1 Foundation & Auth
-Phase: 1 of 10 (Foundation & Setup) — Planning
-Plan: 01-01 created, awaiting approval
-Status: PLAN created, ready for APPLY
-Last activity: 2026-05-19 — Created .paul/phases/01-foundation/01-01-PLAN.md
+Milestone: v0.1 Foundation & Auth — COMPLETE ✓
+Milestone: v0.2 Bible & Workouts — In Progress
+Phase: 3 of 10 (Bible Reader) — COMPLETE ✓
+Next Phase: 4 (Devotionals)
+Last activity: 2026-05-19 — Phase 03 complete
 
 Progress:
-- Milestone v0.1: [░░░░░░░░░░] 0%
-- Phase 01: [░░░░░░░░░░] 0%
+- Milestone v0.1: [██████████] 100% ✓  (Phase 01 Foundation + Phase 02 Auth)
+- Milestone v0.2: [█████░░░░░] 50%     (Phase 03 Bible ✓, Phase 04 Devotionals ○)
 
-## Loop Position
+## Phases Complete
 
-Current loop state:
 ```
-PLAN ──▶ APPLY ──▶ UNIFY
-  ✓        ○        ○     [Plan 01-01 created, awaiting approval]
+Phase 01  Foundation & Setup   ✓
+Phase 02  Auth & User Profiles ✓
+Phase 03  Bible Reader         ✓
+Phase 04  Devotionals          ○  ← next
+Phase 05  Prayer Requests      ○
+Phase 06  Resources Hub        ○
+Phase 07  Tutor Profiles       ○
+Phase 08  Tutor Matching       ○
+Phase 09  Admin Dashboard      ○
+Phase 10  PWA + Launch         ○
 ```
 
 ## Session Continuity
 
 Last session: 2026-05-19
-Stopped at: Plan 01-01 created
-Next action: Approve plan, then run /paul:apply .paul/phases/01-foundation/01-01-PLAN.md
-Resume file: .paul/phases/01-foundation/01-01-PLAN.md
+Next action: Build Phase 04 (Devotionals) — daily/weekly devotional content stored in Supabase
+Resume file: .paul/phases/04-devotionals/ (to be created)
+
+## Outstanding Manual Steps
+
+1. Run `supabase/migrations/001_profiles.sql` in Supabase SQL editor
+2. Enable Email auth in Supabase dashboard (Auth → Providers → Email)
+3. Add `EXPO_PUBLIC_BIBLE_API_KEY` to `.env.local` (get free key at scripture.api.bible)
 
 ## Decisions
 
@@ -37,7 +49,8 @@ Resume file: .paul/phases/01-foundation/01-01-PLAN.md
 | D-04 | API.Bible for scripture | Free tier, comprehensive, well-documented | 2026-05-19 |
 | D-05 | Expo EAS for builds | Managed build service for App Store / Play Store | 2026-05-19 |
 | D-06 | Fully native (Kotlin/Swift) deferred | Kevin may switch later; keep business logic in lib/ for portability | 2026-05-19 |
+| D-07 | KJV as default Bible translation | Free, no licensing issues, widely recognized | 2026-05-19 |
 
 ## Known Issues
 
-None yet.
+None.
