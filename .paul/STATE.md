@@ -4,13 +4,13 @@
 
 Milestone: v0.1 Foundation & Auth — COMPLETE ✓
 Milestone: v0.2 Bible & Workouts — In Progress
-Phase: 3 of 10 (Bible Reader) — COMPLETE ✓
-Next Phase: 4 (Devotionals)
-Last activity: 2026-05-19 — Phase 03 complete
+Phase: 4 of 10 (Devotionals) — COMPLETE ✓
+Next Phase: 5 (Prayer Requests)
+Last activity: 2026-05-19 — Phase 04 complete
 
 Progress:
 - Milestone v0.1: [██████████] 100% ✓  (Phase 01 Foundation + Phase 02 Auth)
-- Milestone v0.2: [█████░░░░░] 50%     (Phase 03 Bible ✓, Phase 04 Devotionals ○)
+- Milestone v0.2: [██████████] 100% ✓  (Phase 03 Bible ✓, Phase 04 Devotionals ✓)
 
 ## Phases Complete
 
@@ -18,8 +18,8 @@ Progress:
 Phase 01  Foundation & Setup   ✓
 Phase 02  Auth & User Profiles ✓
 Phase 03  Bible Reader         ✓
-Phase 04  Devotionals          ○  ← next
-Phase 05  Prayer Requests      ○
+Phase 04  Devotionals          ✓
+Phase 05  Prayer Requests      ○  ← next
 Phase 06  Resources Hub        ○
 Phase 07  Tutor Profiles       ○
 Phase 08  Tutor Matching       ○
@@ -30,14 +30,15 @@ Phase 10  PWA + Launch         ○
 ## Session Continuity
 
 Last session: 2026-05-19
-Next action: Build Phase 04 (Devotionals) — daily/weekly devotional content stored in Supabase
-Resume file: .paul/phases/04-devotionals/ (to be created)
+Next action: Build Phase 05 (Prayer Requests) — users post prayer requests, community can pray/react
+Resume file: .paul/phases/05-prayer/ (to be created)
 
 ## Outstanding Manual Steps
 
-1. Run `supabase/migrations/001_profiles.sql` in Supabase SQL editor
-2. Enable Email auth in Supabase dashboard (Auth → Providers → Email)
+1. Run `supabase/migrations/001_profiles.sql` in Supabase SQL editor (if not done)
+2. Enable Email auth in Supabase dashboard (Auth → Providers → Email) (if not done)
 3. Add `EXPO_PUBLIC_BIBLE_API_KEY` to `.env.local` (get free key at scripture.api.bible)
+4. Run `supabase/migrations/002_devotionals.sql` in Supabase SQL editor (includes seed data)
 
 ## Decisions
 
