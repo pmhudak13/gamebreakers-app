@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Gamebreakers",
+    "slug": "gamebreakers-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "gamebreakers",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#01003b"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.gamebreakersacademy.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#01003b"
+      },
+      "package": "org.gamebreakersacademy.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
