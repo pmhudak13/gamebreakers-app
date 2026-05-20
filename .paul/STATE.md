@@ -4,15 +4,15 @@
 
 Milestone: v0.1 Foundation & Auth — COMPLETE ✓
 Milestone: v0.2 Bible & Workouts — COMPLETE ✓
-Milestone: v0.3 Community Features — In Progress
-Phase: 5 of 10 (Prayer Requests) — COMPLETE ✓
-Next Phase: 6 (Resources Hub)
-Last activity: 2026-05-19 — Phase 05 complete
+Milestone: v0.3 Community Features — COMPLETE ✓
+Phase: 6 of 10 (Resources Hub) — COMPLETE ✓
+Next Phase: 7 (Tutor Profiles)
+Last activity: 2026-05-19 — Phase 06 complete
 
 Progress:
 - Milestone v0.1: [██████████] 100% ✓  (Phase 01 Foundation + Phase 02 Auth)
 - Milestone v0.2: [██████████] 100% ✓  (Phase 03 Bible ✓, Phase 04 Devotionals ✓)
-- Milestone v0.3: [█████░░░░░]  50%    (Phase 05 Prayer ✓, Phase 06 Resources ○)
+- Milestone v0.3: [██████████] 100% ✓  (Phase 05 Prayer ✓, Phase 06 Resources ✓)
 
 ## Phases Complete
 
@@ -22,8 +22,8 @@ Phase 02  Auth & User Profiles ✓
 Phase 03  Bible Reader         ✓
 Phase 04  Devotionals          ✓
 Phase 05  Prayer Requests      ✓
-Phase 06  Resources Hub        ○  ← next
-Phase 07  Tutor Profiles       ○
+Phase 06  Resources Hub        ✓
+Phase 07  Tutor Profiles       ○  ← next
 Phase 08  Tutor Matching       ○
 Phase 09  Admin Dashboard      ○
 Phase 10  PWA + Launch         ○
@@ -32,8 +32,8 @@ Phase 10  PWA + Launch         ○
 ## Session Continuity
 
 Last session: 2026-05-19
-Next action: Build Phase 06 (Resources Hub) — curated resource cards with category filter
-Resume file: .paul/phases/06-resources/ (to be created)
+Next action: Build Phase 07 (Tutor Profiles) — tutor listing with subject/availability filters
+Resume file: .paul/phases/07-tutor-profiles/ (to be created)
 
 ## Outstanding Manual Steps
 
@@ -41,7 +41,8 @@ Resume file: .paul/phases/06-resources/ (to be created)
 2. Enable Email auth in Supabase dashboard (Auth → Providers → Email) (if not done)
 3. Add `EXPO_PUBLIC_BIBLE_API_KEY` to `.env.local` (get free key at scripture.api.bible)
 4. Run `supabase/migrations/002_devotionals.sql` in Supabase SQL editor (includes seed data)
-5. Run `supabase/migrations/003_prayer_requests.sql` in Supabase SQL editor
+5. Run `supabase/migrations/003_prayer_requests.sql` in Supabase SQL editor ✓ Done
+6. Run `supabase/migrations/004_resources.sql` in Supabase SQL editor
 
 ## Decisions
 
