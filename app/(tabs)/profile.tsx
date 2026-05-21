@@ -1,4 +1,5 @@
 import { View, Text, TouchableOpacity, ScrollView } from 'react-native'
+import { useRouter } from 'expo-router'
 import { Ionicons } from '@expo/vector-icons'
 import { useAuth } from '../../context/auth'
 
@@ -24,6 +25,7 @@ function InfoRow({ icon, label, value }: { icon: IconName; label: string; value:
 
 export default function ProfileScreen() {
   const { user, profile, signOut } = useAuth()
+  const router = useRouter()
 
   const initials = profile?.name
     ? profile.name
@@ -79,6 +81,24 @@ export default function ProfileScreen() {
             <InfoRow icon="mail-outline" label="Email" value={user.email} />
           ) : null}
         </View>
+
+        {profile?.role === 'admin' && (
+          <TouchableOpacity
+            onPress={() => router.push('/admin')}
+            className="bg-white rounded-2xl p-4 flex-row items-center mb-3"
+            style={{
+              shadowColor: '#000',
+              shadowOffset: { width: 0, height: 1 },
+              shadowOpacity: 0.08,
+              shadowRadius: 3,
+            }}
+            activeOpacity={0.85}
+          >
+            <Ionicons name="shield-checkmark-outline" size={20} color="#01003b" />
+            <Text className="text-[#01003b] font-semibold ml-3 flex-1">Admin Panel</Text>
+            <Ionicons name="chevron-forward" size={16} color="#a4a4a4" />
+          </TouchableOpacity>
+        )}
 
         <TouchableOpacity
           onPress={signOut}

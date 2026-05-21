@@ -10,7 +10,7 @@ const features: { href: string; icon: IconName; label: string; desc: string }[] 
   { href: '/workouts', icon: 'barbell-outline', label: 'Workouts', desc: 'Train like a champion' },
   { href: '/prayer', icon: 'hand-left-outline', label: 'Prayer', desc: 'Submit & support prayers' },
   { href: '/resources', icon: 'grid-outline', label: 'Resources', desc: 'Tools for your future' },
-  { href: '/connect', icon: 'people-outline', label: 'Connect', desc: 'Find a tutor today' },
+  { href: '/tutors', icon: 'people-outline', label: 'Connect', desc: 'Find a tutor today' },
 ]
 
 export default function HomeScreen() {

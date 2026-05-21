@@ -11,7 +11,7 @@ export default function WorkoutsScreen() {
           </View>
           <Text className="font-semibold text-[#01003b] text-base mb-1">Workout Plans Coming Soon</Text>
           <Text className="text-xs text-[#a4a4a4] text-center">
-            Sport-specific training plans by position and skill level — launching in Phase 04.
+            Sport-specific training plans by position and skill level — launching soon.
           </Text>
         </View>
       </View>

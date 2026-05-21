@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Gamebreakers",
+    "name": "Gamebreakers Academy",
     "slug": "gamebreakers-app",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "gamebreakers",
@@ -14,19 +14,32 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "org.gamebreakersacademy.app"
+      "bundleIdentifier": "org.gamebreakersacademy.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used for profile photos.",
+        "NSPhotoLibraryUsageDescription": "Used for profile photos."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#01003b"
       },
-      "package": "org.gamebreakersacademy.app"
+      "package": "org.gamebreakersacademy.app",
+      "versionCode": 1,
+      "permissions": []
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "name": "Gamebreakers Academy",
+      "shortName": "Gamebreakers",
+      "description": "Faith. Fitness. Future. The student-athlete app by Game Breakers Academy.",
+      "themeColor": "#01003b",
+      "backgroundColor": "#01003b",
+      "lang": "en"
     },
     "plugins": [
       "expo-router",
@@ -34,6 +47,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
     }
   }
 }

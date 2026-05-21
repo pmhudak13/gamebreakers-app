@@ -74,6 +74,13 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="tutors"
+        options={{
+          title: 'Tutors',
+          tabBarIcon: ({ color }) => <TabIcon name="school-outline" color={color} />,
+        }}
+      />
+      <Tabs.Screen
         name="profile"
         options={{
           title: 'Profile',
